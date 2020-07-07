@@ -1,0 +1,28 @@
+{
+  "name": "parse-server-dedicated-email-adapter",
+  "version": "1.0.0",
+  "description": "Parse mail extension to send emails using dedicated accounts",
+  "main": "index.js",
+  "dependencies": {
+    "nodemailer": "6.4.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "parse",
+    "server",
+    "amazon",
+    "ses",
+    "mail",
+    "email",
+    "adapter"
+  ],
+  "author": "Feyijinmi Adegoke jinminetics@gmail.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyberockvalley/parse-server-dedicated-email-adapter.git"
+  },
+  "readme": "README.md"
+}
