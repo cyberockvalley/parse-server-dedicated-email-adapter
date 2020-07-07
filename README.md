@@ -1,4 +1,4 @@
-[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=0.0.1&x2=0)](https://badge.fury.io/js/parse-server-dedicated-email-adapter)
+[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=0.0.2&x2=0)](https://badge.fury.io/js/parse-server-dedicated-email-adapter)
 # Parse Server Dedicated Email Adapter
 
 
