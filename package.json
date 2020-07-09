@@ -1,6 +1,6 @@
 {
   "name": "parse-server-dedicated-email-adapter",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Parse mail extension to send emails using dedicated accounts",
   "main": "index.js",
   "dependencies": {
@@ -16,7 +16,10 @@
     "ses",
     "mail",
     "email",
-    "adapter"
+    "adapter",
+    "dedicated",
+    "vps",
+    "shared"
   ],
   "author": "Feyijinmi Adegoke jinminetics@gmail.com",
   "license": "ISC",

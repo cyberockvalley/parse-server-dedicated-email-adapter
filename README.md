@@ -1,8 +1,8 @@
-[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=0.0.2&x2=0)](https://badge.fury.io/js/parse-server-dedicated-email-adapter)
+[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=3.0.1&x2=0)](https://badge.fury.io/js/parse-server-dedicated-email-adapter)
 # Parse Server Dedicated Email Adapter
 
 
-This is a parse server email adapter that will route all emails sent by parse server through general email providers, like gmail, yahoo etc. Emails can include password resets, verification emails and custom emails sent through cloud code.
+This is a parse server email adapter that will route all emails sent by parse server through your dedicated email server(e.g mail.my-example-domain.com). Emails can include password resets, verification emails and custom emails sent through cloud code.
 
 Read more here: https://github.com/parse-community/parse-server.
 
