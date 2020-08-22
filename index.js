@@ -31,13 +31,14 @@ module.exports = function (options) {
         return new Promise(function (resolve, reject) {
 
             var mailOptions = {
-                from: options.from, // sender address
-                to: [mail.to], // list of receivers
+                ...mail,
+                from: mail.from || options.from, // sender address
+                to: [mail.to], // Comma separated list or an array of recipients email addresses that will appear on the To: field
                 subject: mail.subject, // Subject line
                 text: mail.text, //, // plaintext body
-                html:mail.html,
-                attachments:mail.attachments
-            };
+                html: mail.html,
+                attachments: mail.attachments
+            }
 
             transporter.sendMail(mailOptions, function (error, info) {
                 if (error) {

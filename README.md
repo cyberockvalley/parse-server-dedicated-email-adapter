@@ -1,4 +1,4 @@
-[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=3.0.1&x2=0)](https://badge.fury.io/js/parse-server-dedicated-email-adapter)
+[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=3.0.5&x2=0)](https://badge.fury.io/js/parse-server-dedicated-email-adapter)
 # Parse Server Dedicated Email Adapter
 
 
@@ -41,6 +41,33 @@ var parse = new ParseServer({
       }
    }
 });
+
+//To use the email adapter to send an email directly to another email address such as sending an email to yourself via the contact form on your website, you can call the adapter as follows:
+
+var EmailAdapter = require("parse-server-dedicated-email-adapter")
+
+//where options is the same as the emailAdapter options above
+var mailAdapter = EmailAdapter(options)
+
+var mailOptions = {
+   from: "foo@example.com", // sender address. optional as long as it is provided in the options above
+   to: ["bar@example.com"], // Comma separated list or an array of recipients email addresses that will appear on the To: field
+   subject: "Hello World!", // Subject line
+   text: "How're you doing?", // The plaintext version of the message as an Unicode string, Buffer, Stream or an attachment-like object ({path: ‘/var/data/…'})
+   html: "<b>How're you doing?</b>", // The HTML version of the message as an Unicode string, Buffer, Stream or an attachment-like object ({path: ‘http://…'})
+   attachments: [...], // An array of attachment objects. See [Using attachments](https://nodemailer.com/message/attachments/) for details. Attachments can be used for [embedding images](https://nodemailer.com/message/embedded-images/) as well.
+}
+//This adapter uses [nodemailer email transport library](https://nodemailer.com), so it supports all the nodemailer options.
+//To see more options, go to the nodemailer [message options documentation](https://nodemailer.com/message/)
+mailAdapter.sendMail({
+   mailOptions
+})
+.then(feedback => {
+   //handle success here
+})
+.catch(e => {
+   //handle error here
+})
 ```
 
 ## Credits
