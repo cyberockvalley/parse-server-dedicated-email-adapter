@@ -32,7 +32,7 @@ module.exports = function (options) {
 
             var mailOptions = {
                 ...mail,
-                from: mail.from || options.from, // sender address
+                from: mail.from || options.from || options.email, // sender address
                 to: [mail.to], // Comma separated list or an array of recipients email addresses that will appear on the To: field
                 subject: mail.subject, // Subject line
                 text: mail.text, //, // plaintext body
