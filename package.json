@@ -4,7 +4,7 @@
   "description": "Parse mail extension to send emails using dedicated accounts",
   "main": "index.js",
   "dependencies": {
-    "nodemailer": "6.4.6"
+    "nodemailer": "6.4.16"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
